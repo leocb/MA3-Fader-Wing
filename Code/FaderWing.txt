@@ -1,0 +1,162 @@
+Configuration	FaderWing
+STM32CubeMX 	6.7.0
+Date	02/08/2023
+MCU	STM32G473RCTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC2	IN3 Single-ended	ADC2_IN3	PA6
+ADC2	IN4 Single-ended	ADC2_IN4	PA7
+ADC2	IN5 Single-ended	ADC2_IN5	PC4
+ADC2	IN13 Single-ended	ADC2_IN13	PA5
+ADC2	IN17 Single-ended	ADC2_IN17	PA4
+I2C1	I2C	I2C1_SCL	PB8-BOOT0
+I2C1	I2C	I2C1_SDA	PB7
+RCC	USB_FS	RCC_VS_USB	VP_RCC_VS_USB
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	Internal voltage reference	VREFBUF_OUT	VREF+
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+SYS	Dead Battery Signals disabled	SYS_VS_DBSignals	VP_SYS_VS_DBSignals
+TIM1	Encoder Mode	TIM1_CH1	PA8
+TIM1	Encoder Mode	TIM1_CH2	PA9
+TIM2	Encoder Mode	TIM2_CH1	PA15
+TIM2	Encoder Mode	TIM2_CH2	PB3
+TIM3	Encoder Mode	TIM3_CH1	PB4
+TIM3	Encoder Mode	TIM3_CH2	PB5
+TIM4	PWM Generation CH1	TIM4_CH1	PB6
+TIM5	Encoder Mode	TIM5_CH1	PA0
+TIM5	Encoder Mode	TIM5_CH2	PA1
+TIM8	Encoder Mode	TIM8_CH1	PC6
+TIM8	Encoder Mode	TIM8_CH2	PC7
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+8	PC0	GPIO_Output	
+9	PC1	GPIO_Output	
+10	PC2	GPIO_Output	
+11	PC3	GPIO_Output	
+12	PA0	TIM5_CH1	
+13	PA1	TIM5_CH2	
+14	PA2	GPIO_Output	
+18	PA4	ADC2_IN17	
+19	PA5	ADC2_IN13	
+20	PA6	ADC2_IN3	
+21	PA7	ADC2_IN4	
+22	PC4	ADC2_IN5	
+28	VREF+	VREFBUF_OUT	
+33	PB11	GPIO_Input	
+34	PB12	GPIO_Input	
+35	PB13	GPIO_Input	
+36	PB14	GPIO_Input	
+37	PB15	GPIO_Input	
+38	PC6	TIM8_CH1	
+39	PC7	TIM8_CH2	
+42	PA8	TIM1_CH1	
+43	PA9	TIM1_CH2	
+45	PA11	USB_DM	
+46	PA12	USB_DP	
+49	PA13	SYS_JTMS-SWDIO	
+50	PA14	SYS_JTCK-SWCLK	
+51	PA15	TIM2_CH1	
+56	PB3	TIM2_CH2	
+57	PB4	TIM3_CH1	
+58	PB5	TIM3_CH2	
+59	PB6	TIM4_CH1	LED NRZ
+60	PB7	I2C1_SDA	
+61	PB8-BOOT0	I2C1_SCL	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC2	IN3 Single-ended	ADC2_IN3	PA6
+ADC2	IN4 Single-ended	ADC2_IN4	PA7
+ADC2	IN5 Single-ended	ADC2_IN5	PC4
+ADC2	IN13 Single-ended	ADC2_IN13	PA5
+ADC2	IN17 Single-ended	ADC2_IN17	PA4
+I2C1	I2C	I2C1_SCL	PB8-BOOT0
+I2C1	I2C	I2C1_SDA	PB7
+RCC	USB_FS	RCC_VS_USB	VP_RCC_VS_USB
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	Internal voltage reference	VREFBUF_OUT	VREF+
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+SYS	Dead Battery Signals disabled	SYS_VS_DBSignals	VP_SYS_VS_DBSignals
+TIM1	Encoder Mode	TIM1_CH1	PA8
+TIM1	Encoder Mode	TIM1_CH2	PA9
+TIM2	Encoder Mode	TIM2_CH1	PA15
+TIM2	Encoder Mode	TIM2_CH2	PB3
+TIM3	Encoder Mode	TIM3_CH1	PB4
+TIM3	Encoder Mode	TIM3_CH2	PB5
+TIM4	PWM Generation CH1	TIM4_CH1	PB6
+TIM5	Encoder Mode	TIM5_CH1	PA0
+TIM5	Encoder Mode	TIM5_CH2	PA1
+TIM8	Encoder Mode	TIM8_CH1	PC6
+TIM8	Encoder Mode	TIM8_CH2	PC7
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+8	PC0	GPIO_Output	
+9	PC1	GPIO_Output	
+10	PC2	GPIO_Output	
+11	PC3	GPIO_Output	
+12	PA0	TIM5_CH1	
+13	PA1	TIM5_CH2	
+14	PA2	GPIO_Output	
+18	PA4	ADC2_IN17	
+19	PA5	ADC2_IN13	
+20	PA6	ADC2_IN3	
+21	PA7	ADC2_IN4	
+22	PC4	ADC2_IN5	
+28	VREF+	VREFBUF_OUT	
+33	PB11	GPIO_Input	
+34	PB12	GPIO_Input	
+35	PB13	GPIO_Input	
+36	PB14	GPIO_Input	
+37	PB15	GPIO_Input	
+38	PC6	TIM8_CH1	
+39	PC7	TIM8_CH2	
+42	PA8	TIM1_CH1	
+43	PA9	TIM1_CH2	
+45	PA11	USB_DM	
+46	PA12	USB_DP	
+49	PA13	SYS_JTMS-SWDIO	
+50	PA14	SYS_JTCK-SWCLK	
+51	PA15	TIM2_CH1	
+56	PB3	TIM2_CH2	
+57	PB4	TIM3_CH1	
+58	PB5	TIM3_CH2	
+59	PB6	TIM4_CH1	LED NRZ
+60	PB7	I2C1_SDA	
+61	PB8-BOOT0	I2C1_SCL	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : FaderWing
+Project Folder : C:\Users\Venus\Desktop\DIY FaderWing\FaderWing
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_G4 V1.5.1
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : Yes
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
