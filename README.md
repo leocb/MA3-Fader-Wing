@@ -1,9 +1,10 @@
-# MA3-Fader-Wing
+# DIY GrandMA3 Fader Wing
+
 An open source alternative hardware for the MA3 Fader wing. intended for budget onPC setups
 
-Use KiCad 7 nightly `r31587.26b9d2f5ac` or later to open the cad files
+Use [KiCad 7 nightly r31587.26b9d2f5ac](https://downloads.kicad.org/kicad/windows/explore/nightlies/download/kicad-nightly-r31587.26b9d2f5ac-x86_64.exe) or later to open the KiCad files
 
-Use the files on the `Publish` folder to make your own. Read bellow for more.
+Use the files on the `Publish` folder to make your own. Read more below.
 
 ## PCB / Electronic Design ✏
 
@@ -12,4 +13,4 @@ Use the files on the `Publish` folder to make your own. Read bellow for more.
 
 ## How to make your own 🛠
 
-Comming soon™
+Coming soon™
