@@ -6,6 +6,13 @@ Use [KiCad 7 nightly r31587.26b9d2f5ac](https://downloads.kicad.org/kicad/window
 
 Use the files on the `Publish` folder to make your own. Read more below.
 
+## Contributing
+
+- Feel free to open a PR with new features or bug fixes
+- Support this and more projects by donating:
+
+[![Paypal](https://user-images.githubusercontent.com/8310271/225498353-9d0a672d-ed45-4fed-9838-11d71ee49c28.png)](https://www.paypal.com/donate/?hosted_button_id=683D7S6KLX7EA)
+
 ## PCB / Electronic Design ✏
 
 ![Revision 0.4](KiCad/Image%20Exports/Revision%200.4.png)
