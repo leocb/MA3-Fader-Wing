@@ -6,6 +6,7 @@ An open source alternative hardware for the MA3 Fader wing. intended for budget 
 
 > - **This project is a work in progress and is NOT ready yet!**
 > - This is a simple control surface that will send MIDI and OSC messages to the MA3 onPC software, it will NOT enable parameters on the MA3. If you need to enable parameters, the cheapest way to do it is by purchasing the MA3 2port Node with 2k parameters
+> - This project uses the GPL-3.0 license, which basically means that you can sell this if you want to, but any changes must be kept open source!
 
 For instructions on how to make your own, read more down bellow. ⬇️
 
