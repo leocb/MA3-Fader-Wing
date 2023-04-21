@@ -8,8 +8,8 @@ Use the files on the `Publish` folder to make your own. Read more below.
 
 ## PCB / Electronic Design ✏
 
-![Revision 0.4](KiCad/Image%20Exports/Revision%200.4.png)
-![Revision 0.4 PCB](KiCad/Image%20Exports/Revision%200.4%20PCB.png)
+![Revision 0.4](KiCad/Image%20Exports/Revision%200.7.png)
+![Revision 0.4 PCB](KiCad/Image%20Exports/Revision%200.7%20PCB.png)
 
 ## How to make your own 🛠
 
