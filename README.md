@@ -25,8 +25,8 @@ Support this and more projects by donating:
 
 ## PCB / Electronic Design ✏️
 
-![Revision 0.4](KiCad/Image%20Exports/Revision%200.7.png)
-![Revision 0.4 PCB](KiCad/Image%20Exports/Revision%200.7%20PCB.png)
+![Revision 0.8](KiCad/Image%20Exports/Revision%200.8.png)
+![Revision 0.8 PCB](KiCad/Image%20Exports/Revision%200.8%20PCB.png)
 
 ## How to make your own 🚀
 
