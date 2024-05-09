@@ -7119,12 +7119,6 @@
 		(uuid "90f03d99-426a-4cb9-a571-cc117ff9b47b")
 	)
 	(junction
-		(at 125.73 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92ae17fe-6a9b-4867-946d-b096564bb2f5")
-	)
-	(junction
 		(at 129.54 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7539,6 +7533,12 @@
 		(uuid "ebe2973c-6c0f-4a5a-a1c0-9f78d7be5561")
 	)
 	(junction
+		(at 137.16 17.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec099e4c-3785-424b-a8a1-898c7adcbb4a")
+	)
+	(junction
 		(at 99.06 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7822,7 +7822,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 17.78) (xy 134.62 17.78)
+			(xy 140.97 17.78) (xy 137.16 17.78)
 		)
 		(stroke
 			(width 0)
@@ -7932,16 +7932,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 172.72) (xy 165.1 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ca09950-919b-455c-8d1c-c1d76e75e7c5")
-	)
-	(wire
-		(pts
 			(xy 182.88 151.13) (xy 190.5 151.13)
 		)
 		(stroke
@@ -7979,6 +7969,16 @@
 			(type default)
 		)
 		(uuid "0e022787-2dd6-4893-a84e-0aabb688e13b")
+	)
+	(wire
+		(pts
+			(xy 165.1 172.72) (xy 165.1 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e06097b-d7b7-4278-8021-ddba34e96345")
 	)
 	(wire
 		(pts
@@ -10799,6 +10799,16 @@
 			(type default)
 		)
 		(uuid "9397c5d9-df49-48ac-a956-c6c598db72cb")
+	)
+	(wire
+		(pts
+			(xy 137.16 17.78) (xy 134.62 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94a7a2e1-c1a8-4dc2-a08d-649409096616")
 	)
 	(wire
 		(pts
@@ -15208,7 +15218,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "076b2298-d6a5-42bf-9c87-1d03df94580e")
-		(property "Reference" "TP30"
+		(property "Reference" "3vNz1"
 			(at 178.1271 137.2046 0)
 			(effects
 				(font
@@ -15260,7 +15270,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "TP30")
+					(reference "3vNz1")
 					(unit 1)
 				)
 			)
@@ -22336,7 +22346,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77712bb3-6197-45b8-afa4-94de1f7ebe8e")
-		(property "Reference" "LED_5V1"
+		(property "Reference" "LED-5V1"
 			(at 155.0035 148.59 0)
 			(effects
 				(font
@@ -22388,7 +22398,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "LED_5V1")
+					(reference "LED-5V1")
 					(unit 1)
 				)
 			)
@@ -27253,7 +27263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a90b01f9-0401-424d-94ff-f2110ab4520f")
-		(property "Reference" "LED_3.3V1"
+		(property "Reference" "LED-3V1"
 			(at 155.0035 139.7 0)
 			(effects
 				(font
@@ -27305,7 +27315,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "LED_3.3V1")
+					(reference "LED-3V1")
 					(unit 1)
 				)
 			)
@@ -28105,15 +28115,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 125.73 27.94 0)
+		(at 137.16 17.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b4190c18-50bf-434a-b04a-35f3de6231d5")
-		(property "Reference" "TP26"
-			(at 123.5171 29.2546 0)
+		(property "Reference" "5vNz1"
+			(at 134.62 16.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28122,7 +28132,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 127 29.845 0)
+			(at 138.43 19.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28132,7 +28142,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 130.81 27.94 0)
+			(at 142.24 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28141,7 +28151,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 27.94 0)
+			(at 142.24 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28150,7 +28160,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 27.94 0)
+			(at 137.16 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28164,7 +28174,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "TP26")
+					(reference "5vNz1")
 					(unit 1)
 				)
 			)
@@ -32719,7 +32729,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5c3c1bb-935a-41ae-bbfc-2040dc73cd57")
-		(property "Reference" "PB9"
+		(property "Reference" "PB10"
 			(at 273.05 132.08 0)
 			(effects
 				(font
@@ -32771,7 +32781,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "PB9")
+					(reference "PB10")
 					(unit 1)
 				)
 			)
