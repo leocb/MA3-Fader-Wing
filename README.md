@@ -23,8 +23,8 @@ Support this and more projects by donating:
 
 ## PCB / Electronic Design ✏️
 
-![Revision 0.8](KiCad/Image%20Exports/Revision%200.8.png)
-![Revision 0.8 PCB](KiCad/Image%20Exports/Revision%200.8%20PCB.png)
+![Revision 1 0 PCB](https://github.com/leocb/MA3-Fader-Wing/assets/8310271/f466b583-7df6-4ef1-bdc9-01447fcb8914)
+![Revision 1 0](https://github.com/leocb/MA3-Fader-Wing/assets/8310271/411a1419-1a85-42b7-a406-351081a7856a)
 
 ## How to make your own 🚀
 
