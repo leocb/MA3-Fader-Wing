@@ -14929,7 +14929,7 @@
 		(at 270.7023 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00901ef0-1fb0-4933-b5ee-ab6b0261e668")
@@ -15214,11 +15214,11 @@
 		(at 180.34 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "076b2298-d6a5-42bf-9c87-1d03df94580e")
-		(property "Reference" "3vNz1"
+		(property "Reference" "TPNZ1"
 			(at 178.1271 137.2046 0)
 			(effects
 				(font
@@ -15270,7 +15270,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "3vNz1")
+					(reference "TPNZ1")
 					(unit 1)
 				)
 			)
@@ -15281,7 +15281,7 @@
 		(at 19.05 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "08506768-ef09-439a-80d2-d09f75168902")
@@ -15425,7 +15425,7 @@
 		(at 99.06 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0acffdd7-6e5e-4da4-8406-94348aaeae12")
@@ -15582,7 +15582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 38.1 162.56 0)
 			(effects
 				(font
@@ -16275,7 +16275,7 @@
 		(at 162.56 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "16ab44b2-089f-4d83-ab4b-248554cbb2e3")
@@ -16354,7 +16354,7 @@
 				)
 			)
 		)
-		(property "Value" "500"
+		(property "Value" "510"
 			(at 126.8194 107.1655 0)
 			(effects
 				(font
@@ -16767,7 +16767,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "1cc4bf76-e01b-430f-882b-a39de6ce4c1b")
@@ -16990,7 +16990,7 @@
 		(at 38.1 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "20d3b27d-86ee-42c0-b450-5c9ccd604a72")
@@ -17058,7 +17058,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "222d560c-2b41-4d51-b274-0cb8357e6619")
@@ -17125,7 +17125,7 @@
 		(at 106.68 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -17350,7 +17350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A"
 			(at 72.39 180.34 0)
 			(effects
 				(font
@@ -17419,7 +17419,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 99.3648 20.32 0)
 			(effects
 				(font
@@ -17598,7 +17598,7 @@
 		(at 270.51 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2d682520-c1ce-4235-a9a6-b13f70596567")
@@ -17742,7 +17742,7 @@
 		(at 25.4 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2ee9fa1b-741d-43d9-ba8d-eb4206c4e697")
@@ -18165,7 +18165,7 @@
 		(at 227.33 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "326f6d1e-80cb-47d7-b71d-7c3f7cad40a7")
@@ -18233,7 +18233,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "334eba53-0243-4b1c-9fe1-17b830b987bb")
@@ -18497,7 +18497,7 @@
 		(at 66.04 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -18720,7 +18720,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "37d20c99-0d52-405d-9c84-dabec4005ff7")
@@ -18788,7 +18788,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "37e22cf1-b51f-4794-bef9-3908b01e8235")
@@ -19272,7 +19272,7 @@
 		(at 86.36 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3b57ddf4-215d-4046-9ce9-a6bca4f7dbe9")
@@ -19415,7 +19415,7 @@
 		(at 78.74 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3def923b-63d6-4726-b541-44a32de781ff")
@@ -19559,7 +19559,7 @@
 		(at 66.04 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "426ed1f1-f285-4b7e-8745-e488191e3be3")
@@ -19627,7 +19627,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "46da2745-5d56-41a4-b21f-8a944aac3b15")
@@ -19860,7 +19860,7 @@
 				)
 			)
 		)
-		(property "Value" "1.02M"
+		(property "Value" "1M"
 			(at 31.115 189.23 0)
 			(effects
 				(font
@@ -20536,7 +20536,7 @@
 		(at 46.99 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "55752f85-ec9e-4d05-af3a-809a24937862")
@@ -20608,7 +20608,7 @@
 		(at 229.87 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "5760c5b7-8323-4883-8b98-76666a46fbe3")
@@ -21190,7 +21190,7 @@
 		(at 19.05 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "5e50ea64-5af3-40c2-8d94-d92e3913218f")
@@ -21258,7 +21258,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "5e6278fc-4c7b-43ed-85da-f7fbc06a8aa2")
@@ -21753,7 +21753,7 @@
 		(at 119.38 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "69f99567-4e32-4f37-a2b8-cccceb52e218")
@@ -21820,7 +21820,7 @@
 		(at 59.69 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "6cb5045b-57f1-4d97-b4d9-c99017f53854")
@@ -22033,7 +22033,7 @@
 		(at 106.68 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "72f0b81c-9910-417c-8af5-364427904112")
@@ -22346,7 +22346,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77712bb3-6197-45b8-afa4-94de1f7ebe8e")
-		(property "Reference" "LED-5V1"
+		(property "Reference" "LD2"
 			(at 155.0035 148.59 0)
 			(effects
 				(font
@@ -22398,7 +22398,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "LED-5V1")
+					(reference "LD2")
 					(unit 1)
 				)
 			)
@@ -22496,7 +22496,7 @@
 		(at 25.4 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -22564,7 +22564,7 @@
 		(at 45.72 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -22701,7 +22701,7 @@
 		(at 273.05 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "78fbfda4-dc21-4f80-a7c0-599ba523a178")
@@ -22768,7 +22768,7 @@
 		(at 273.05 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "7b6b47f9-ca78-44c2-8477-235af6ae4537")
@@ -22923,7 +22923,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "7bbb81a0-2b29-492a-a277-b374f1f67249")
@@ -23059,7 +23059,7 @@
 		(at 254 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "7c86cf88-935d-4b44-83b4-32bcdfb77301")
@@ -23196,7 +23196,7 @@
 		(at 66.04 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "7efd268d-8b9d-4b2e-a750-86948b8083a6")
@@ -23274,7 +23274,7 @@
 		(at 106.68 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "7f4c2c83-1dc1-435f-9026-e0ef0d5b4596")
@@ -23509,7 +23509,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 51.1048 20.32 0)
 			(effects
 				(font
@@ -24011,7 +24011,7 @@
 		(at 106.68 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -24235,7 +24235,7 @@
 		(at 86.36 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -24603,7 +24603,7 @@
 		(at 86.36 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "8b85cae0-8990-40a9-b696-c3b75af1712d")
@@ -24670,7 +24670,7 @@
 		(at 45.72 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -24805,7 +24805,7 @@
 		(at 25.4 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -25243,7 +25243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 91.7448 20.32 0)
 			(effects
 				(font
@@ -25355,7 +25355,7 @@
 		(at 45.72 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9256ef55-d6aa-494d-88ed-5350db0f20e4")
@@ -25717,7 +25717,7 @@
 		(at 85.09 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "98180ee5-97df-46f5-982d-886a586ce275")
@@ -26107,7 +26107,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9c771f82-6b0d-46c6-aff3-50ff8f437118")
@@ -26474,7 +26474,7 @@
 		(at 270.6544 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a1ff739f-205f-4b25-a72e-3a1e483e4486")
@@ -26541,7 +26541,7 @@
 		(at 273.05 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a20e077a-3f2c-4f2c-b557-fa36f7811a17")
@@ -26608,7 +26608,7 @@
 		(at 86.36 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -27114,7 +27114,7 @@
 		(at 273.05 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a4fb95f8-33a1-49d2-b8bd-e6702ca8f389")
@@ -27263,7 +27263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a90b01f9-0401-424d-94ff-f2110ab4520f")
-		(property "Reference" "LED-3V1"
+		(property "Reference" "LD1"
 			(at 155.0035 139.7 0)
 			(effects
 				(font
@@ -27315,7 +27315,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "LED-3V1")
+					(reference "LD1")
 					(unit 1)
 				)
 			)
@@ -27760,7 +27760,7 @@
 		(at 45.72 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ad792846-3296-48c3-a26c-7948e854a3ee")
@@ -27849,7 +27849,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 112.0648 20.32 0)
 			(effects
 				(font
@@ -27918,7 +27918,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 271.4752 45.72 0)
 			(effects
 				(font
@@ -28118,11 +28118,11 @@
 		(at 137.16 17.78 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b4190c18-50bf-434a-b04a-35f3de6231d5")
-		(property "Reference" "5vNz1"
+		(property "Reference" "TPNZ2"
 			(at 134.62 16.256 0)
 			(effects
 				(font
@@ -28174,7 +28174,7 @@
 		(instances
 			(project "FaderWing"
 				(path "/2c43a361-34f1-4ae2-be8b-387d563946da"
-					(reference "5vNz1")
+					(reference "TPNZ2")
 					(unit 1)
 				)
 			)
@@ -28339,7 +28339,7 @@
 		(at 223.52 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b7839add-4cf1-41ec-9a2b-eb93f907e11b")
@@ -28472,7 +28472,7 @@
 		(at 19.05 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b8882af5-590e-4f3b-a118-0f70fb81731d")
@@ -28693,7 +28693,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 58.7248 20.32 0)
 			(effects
 				(font
@@ -29212,7 +29212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 18.0848 20.32 0)
 			(effects
 				(font
@@ -29324,7 +29324,7 @@
 		(at 59.69 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "c6614d57-d1f3-4cc9-9e0c-62fb66d9f312")
@@ -29532,7 +29532,7 @@
 		(at 58.42 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "c8a3d81c-0f04-44d2-bd62-09ab2d427ead")
@@ -29611,7 +29611,7 @@
 				)
 			)
 		)
-		(property "Value" "500"
+		(property "Value" "510"
 			(at 133.1694 20.8055 0)
 			(effects
 				(font
@@ -29666,7 +29666,7 @@
 		(at 19.05 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "cb5056f2-f10c-412d-8b48-c1275eb72422")
@@ -30153,7 +30153,7 @@
 		(at 25.4 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d10d1dbf-ca42-4d23-8969-7e16606ef8ef")
@@ -30231,7 +30231,7 @@
 		(at 124.46 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d174d95e-dc17-4933-92ee-91d6df4caed2")
@@ -30320,7 +30320,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 38.4048 20.32 0)
 			(effects
 				(font
@@ -30367,7 +30367,7 @@
 		(at 45.72 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -30587,7 +30587,7 @@
 		(at 224.7667 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d8672e02-881e-4c3a-b840-c673eea73217")
@@ -30654,7 +30654,7 @@
 		(at 108.585 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d8d02237-fb33-4f0a-a7eb-2899917b8a22")
@@ -30798,7 +30798,7 @@
 		(at 66.04 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -31360,7 +31360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 79.0448 20.32 0)
 			(effects
 				(font
@@ -31407,7 +31407,7 @@
 		(at 25.4 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -31544,7 +31544,7 @@
 		(at 270.6284 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e8f2f26c-c7fc-4a5a-a2c5-5a84f1a64c92")
@@ -31676,7 +31676,7 @@
 		(at 106.68 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -31766,7 +31766,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 71.4248 20.32 0)
 			(effects
 				(font
@@ -31883,7 +31883,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "eb97afa2-e97e-4a70-95e6-8ddb96337494")
@@ -32083,7 +32083,7 @@
 		(at 66.04 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -32151,7 +32151,7 @@
 		(at 86.36 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -32362,7 +32362,7 @@
 		(at 227.33 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f1262160-8041-4458-b3e9-dc2e8b9afe4d")
@@ -32725,7 +32725,7 @@
 		(at 271.78 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f5c3c1bb-935a-41ae-bbfc-2040dc73cd57")
@@ -33146,7 +33146,7 @@
 		(at 34.29 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f98bc0a0-11e7-4295-8325-9165d452fec0")
@@ -33287,7 +33287,7 @@
 		(at 99.06 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "fa60a49f-4374-423d-bb25-39a86fa29714")
@@ -33354,7 +33354,7 @@
 		(at 72.39 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "fb351647-d6e5-4df9-aed2-f60e94874d20")
@@ -33493,7 +33493,7 @@
 		(at 270.6065 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "fc020135-edb5-4cac-b577-a811589fd065")
@@ -33648,7 +33648,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 30.7848 20.32 0)
 			(effects
 				(font
