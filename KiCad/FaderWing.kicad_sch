@@ -13186,7 +13186,7 @@
 		)
 		(uuid "e6189ef4-b0cb-4285-86c2-66e4b821f061")
 	)
-	(global_label "Fader1-sat"
+	(global_label "Fader1"
 		(shape input)
 		(at 39.37 125.73 90)
 		(fields_autoplaced yes)
@@ -13198,7 +13198,7 @@
 		)
 		(uuid "03a3eb20-ed9b-481e-94ba-515fccbcaca9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 111.8781 90)
+			(at 39.37 116.2739 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13230,7 +13230,7 @@
 			)
 		)
 	)
-	(global_label "Faders-GND"
+	(global_label "GND"
 		(shape passive)
 		(at 29.21 133.35 180)
 		(fields_autoplaced yes)
@@ -13242,7 +13242,7 @@
 		)
 		(uuid "106dc0f4-8e0e-49f6-8dfe-1260888bd2c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.6831 133.35 0)
+			(at 23.4656 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13450,7 +13450,7 @@
 			)
 		)
 	)
-	(global_label "Faders-VREF"
+	(global_label "VREF"
 		(shape passive)
 		(at 29.21 111.76 180)
 		(fields_autoplaced yes)
@@ -13462,7 +13462,7 @@
 		)
 		(uuid "215864f8-1b27-4c49-b8ad-cd9acfa0be2e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.9574 111.76 0)
+			(at 22.7399 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13560,7 +13560,7 @@
 			)
 		)
 	)
-	(global_label "Fader4-sat"
+	(global_label "Fader4"
 		(shape input)
 		(at 77.47 125.73 90)
 		(fields_autoplaced yes)
@@ -13572,7 +13572,7 @@
 		)
 		(uuid "2de4bbed-14fa-4f2a-9272-3209399a7af1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 111.8781 90)
+			(at 77.47 116.2739 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13692,7 +13692,7 @@
 			)
 		)
 	)
-	(global_label "Fader2-sat"
+	(global_label "Fader2"
 		(shape input)
 		(at 52.07 125.73 90)
 		(fields_autoplaced yes)
@@ -13704,7 +13704,7 @@
 		)
 		(uuid "37822d05-6a9a-43bf-b318-8ed71512c3b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.07 111.8781 90)
+			(at 52.07 116.2739 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14418,7 +14418,7 @@
 			)
 		)
 	)
-	(global_label "Fader3-sat"
+	(global_label "Fader3"
 		(shape input)
 		(at 64.77 125.73 90)
 		(fields_autoplaced yes)
@@ -14430,7 +14430,7 @@
 		)
 		(uuid "9738cb47-a218-4620-9b20-dcaffc27e0f5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.77 111.8781 90)
+			(at 64.77 116.2739 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14572,7 +14572,7 @@
 			)
 		)
 	)
-	(global_label "Fader5-sat"
+	(global_label "Fader5"
 		(shape input)
 		(at 90.17 125.73 90)
 		(fields_autoplaced yes)
@@ -14584,7 +14584,7 @@
 		)
 		(uuid "b95adb58-c84b-489a-ba53-a78630e9109d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 111.8781 90)
+			(at 90.17 116.2739 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23568,7 +23568,7 @@
 				)
 			)
 		)
-		(property "Value" "300"
+		(property "Value" "350"
 			(at 148.4094 149.0755 0)
 			(effects
 				(font
