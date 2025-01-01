@@ -50,6 +50,12 @@ I'm currently working on a prototype that should be ready in the near future.
 
 Coming soon™
 
+## 3D Printed stuff
+
+This control surface is intended to be fully 3D printed. Find the STL files [here](3D%20Print/)
+
+If you want to make any modification to the models, these files were designed on OnShape (Free for non-commercial) [here](https://cad.onshape.com/documents/7848fe66a3315e098e2f40d5/w/8da4d24561bb0df992c0092a/e/0479437bc9edfbd2480cdb29)
+
 ## The code
 
 Follow the code specific instructions [here](Code/README.md).
