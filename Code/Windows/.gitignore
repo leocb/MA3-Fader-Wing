@@ -1,0 +1,9 @@
+#reset
+!*
+!*/*
+# Jetbrains rider generated ignore
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
