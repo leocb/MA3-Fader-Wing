@@ -12,6 +12,8 @@
              
      <Application.Resources>
          <converters:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+         <converters:ButtonPositionToAssetPathA x:Key="ButtonAConverter" />
+         <converters:ButtonPositionToAssetPathB x:Key="ButtonBConverter" />
      </Application.Resources>
   
     <Application.Styles>

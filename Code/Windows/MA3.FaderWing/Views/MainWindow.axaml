@@ -4,12 +4,18 @@
         xmlns:views="using:FW.Bridge.Views"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:userControls="clr-namespace:FW.Bridge.Views.UserControls"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:uc="clr-namespace:FW.Bridge.Views.UserControls"
+        mc:Ignorable="d"
+        Width="1300"
+        Height="780"
+        WindowStartupLocation="CenterScreen"
         x:Class="FW.Bridge.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True"
         Icon="/Assets/avalonia-logo.ico"
-        Title="FW.Bridge">
+        Title="Fader Wing Bridge">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -17,13 +23,20 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
-        <userControls:DeviceButtonView
-            ButtonId="1"
-            IsPressed="True"/>
-        <userControls:DeviceButtonView
-            ButtonId="2"
-            IsPressed="False" />
-    </StackPanel>
+    <Panel>
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.1" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+        <Panel Margin="40">
+        
+        <uc:DeviceView/>
+        </Panel>
+    </Panel>
 
 </Window>
