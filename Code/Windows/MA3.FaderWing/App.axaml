@@ -2,12 +2,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="FW.Bridge.App"
              xmlns:local="using:FW.Bridge"
+             xmlns:converters="using:FW.Bridge.Views.Converters"
              RequestedThemeVariant="Light">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
+             
+     <Application.Resources>
+         <converters:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+     </Application.Resources>
   
     <Application.Styles>
         <FluentTheme />
