@@ -3,7 +3,15 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="App.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/DeviceButtonView.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/DeviceFaderView.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/DeviceRotaryView.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/DeviceView.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/FaderView.axaml" value="FW.Bridge.csproj" />
         <entry key="Views/MainWindow.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/UserControls/DeviceButtonView.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/UserControls/DeviceView.axaml" value="FW.Bridge.csproj" />
       </map>
     </option>
   </component>
