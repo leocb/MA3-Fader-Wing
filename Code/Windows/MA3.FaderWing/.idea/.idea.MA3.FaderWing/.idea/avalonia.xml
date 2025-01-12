@@ -11,6 +11,8 @@
         <entry key="Views/FaderView.axaml" value="FW.Bridge.csproj" />
         <entry key="Views/MainWindow.axaml" value="FW.Bridge.csproj" />
         <entry key="Views/UserControls/DeviceButtonView.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/UserControls/DeviceFaderView.axaml" value="FW.Bridge.csproj" />
+        <entry key="Views/UserControls/DeviceRotaryView.axaml" value="FW.Bridge.csproj" />
         <entry key="Views/UserControls/DeviceView.axaml" value="FW.Bridge.csproj" />
       </map>
     </option>

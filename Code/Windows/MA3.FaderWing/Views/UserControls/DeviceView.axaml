@@ -7,30 +7,64 @@
              x:Class="FW.Bridge.Views.UserControls.DeviceView"
              Width="467"
              Height="721"
-             Background="Transparent">
+             Background="Transparent"
+             >
+             <!--Background="Transparent"-->
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="58.7"/>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="58.6"/>
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="331"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="142"/>
+            <RowDefinition Height="46.5"/>
+            <RowDefinition Height="344"/>
+            <RowDefinition Height="6"/>
+            <RowDefinition Height="181"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
+        <!-- Background -->
         <Image
             Grid.ColumnSpan="7"
-            Grid.RowSpan="3"
-            Source="/Assets/Device/Device BG.png"/>
-        <uc:DeviceButtonView ButtonId="301" IsPressed="False" Asset="TL" Margin="1.6,0" Grid.Column="1" Grid.Row="0"/>
-        <uc:DeviceButtonView ButtonId="302" IsPressed="False" Asset="TC" Margin="1.6,0" Grid.Column="2" Grid.Row="0"/>
-        <uc:DeviceButtonView ButtonId="303" IsPressed="False" Asset="TC" Margin="1.6,0" Grid.Column="3" Grid.Row="0"/>
-        <uc:DeviceButtonView ButtonId="304" IsPressed="False" Asset="TC" Margin="1.6,0" Grid.Column="4" Grid.Row="0"/>
-        <uc:DeviceButtonView ButtonId="305" IsPressed="False" Asset="TR" Margin="1.6,0" Grid.Column="5" Grid.Row="0"/>
+            Grid.RowSpan="6"
+            Source="/Assets/Device/Device BG2 with Ticks.png"/>
+            <!--Source="/Assets/Device/Device BG2 with Ticks.png"/>-->
+        <!-- Rotary -->
+        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="1" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="2" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="3" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="4" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="5" Grid.Row="0"/>
+        <!-- Top row Buttons -->
+        <uc:DeviceButtonView ButtonId="301" IsPresed="False" Asset="TL" Grid.Column="1" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="302" IsPresed="False" Asset="TC" Grid.Column="2" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="303" IsPresed="False" Asset="TC" Grid.Column="3" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="304" IsPresed="False" Asset="TC" Grid.Column="4" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="305" IsPresed="False" Asset="TR" Grid.Column="5" Grid.Row="1"/>
+        <!-- Faders -->
+        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="1" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="2" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="3" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="4" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="5" Grid.Row="2"/>
+        <!-- Middle row Buttons -->
+        <uc:DeviceButtonView ButtonId="201" IsPresed="False" Asset="ML" Grid.Column="1" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="202" IsPresed="False" Asset="MC" Grid.Column="2" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="203" IsPresed="False" Asset="MC" Grid.Column="3" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="204" IsPresed="False" Asset="MC" Grid.Column="4" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="205" IsPresed="False" Asset="MR" Grid.Column="5" Grid.Row="3"/>
+        <!-- Bottom row Buttons -->
+        <uc:DeviceButtonView ButtonId="101" IsPresed="False" Asset="BL" Margin="0,5,0,0" Grid.Column="1" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="102" IsPresed="False" Asset="BC" Margin="0,5,0,0" Grid.Column="2" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="103" IsPresed="False" Asset="BC" Margin="0,5,0,0" Grid.Column="3" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="104" IsPresed="False" Asset="BC" Margin="0,5,0,0" Grid.Column="4" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="105" IsPresed="False" Asset="BR" Margin="0,5,0,0" Grid.Column="5" Grid.Row="4"/>
+        
     </Grid>
 </UserControl>

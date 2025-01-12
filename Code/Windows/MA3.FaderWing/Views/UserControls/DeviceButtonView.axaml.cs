@@ -1,7 +1,5 @@
-﻿using System;
-using Avalonia;
+﻿using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Media;
 using FW.Bridge.Data;
 
 namespace FW.Bridge.Views.UserControls;
@@ -11,6 +9,7 @@ public partial class DeviceButtonView : UserControl
     public DeviceButtonView()
     {
         InitializeComponent();
+        AffectsRender<DeviceButtonView>(ButtonIdProperty, IsPressedProperty);
     }
     
     public static readonly StyledProperty<string?> ButtonIdProperty =
@@ -24,9 +23,9 @@ public partial class DeviceButtonView : UserControl
     
     
     public static readonly StyledProperty<bool> IsPressedProperty =
-        AvaloniaProperty.Register<DeviceButtonView,bool>(nameof(IsPressed));
+        AvaloniaProperty.Register<DeviceButtonView,bool>(nameof(IsPresed));
     
-    public bool IsPressed
+    public bool IsPresed
     {
         get => GetValue(IsPressedProperty);
         set => SetValue(IsPressedProperty, value);

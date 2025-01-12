@@ -7,28 +7,28 @@
              Width="68"
              Height="68"
              FontWeight="Black"
-             FontSize="18"
+             FontSize="14"
              Background="Transparent"
->
+             >
     <Panel ClipToBounds="True">
         <Image Source="{ReflectionBinding $parent[UserControl].Asset,
                Converter={StaticResource ButtonAConverter}}"
-               IsVisible="{ReflectionBinding $parent[UserControl].IsPressed,
+               IsVisible="{ReflectionBinding $parent[UserControl].IsPresed,
                Converter={StaticResource InvertedBoolConverter}}"/>
         <TextBlock Foreground="#95a3b3" 
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Text="{ReflectionBinding $parent[UserControl].ButtonId}"
-                   IsVisible="{ReflectionBinding $parent[UserControl].IsPressed,
+                   IsVisible="{ReflectionBinding $parent[UserControl].IsPresed,
                    Converter={StaticResource InvertedBoolConverter}}"/>
         
         <Image Source="{ReflectionBinding $parent[UserControl].Asset,
                Converter={StaticResource ButtonBConverter}}"
-               IsVisible="{ReflectionBinding $parent[UserControl].IsPressed}"/>
+               IsVisible="{ReflectionBinding $parent[UserControl].IsPresed}"/>
         <TextBlock Foreground="#4884e9" 
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Text="{ReflectionBinding $parent[UserControl].ButtonId}"
-                   IsVisible="{ReflectionBinding $parent[UserControl].IsPressed}"/>
+                   IsVisible="{ReflectionBinding $parent[UserControl].IsPresed}"/>
     </Panel>
 </UserControl>

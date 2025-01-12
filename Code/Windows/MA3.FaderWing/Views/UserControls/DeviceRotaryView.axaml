@@ -1,0 +1,24 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="57" d:DesignHeight="57"
+             x:Class="FW.Bridge.Views.UserControls.DeviceRotaryView"
+             Width="57"
+             Height="57"
+             FontWeight="Black"
+             FontSize="18"
+             Background="Transparent"
+             >
+    <Panel ClipToBounds="True">
+        <Image Source="/Assets/Device/Cuts/Device Knob A.png"
+               IsVisible="{ReflectionBinding $parent[UserControl].IsPressed,
+               Converter={StaticResource InvertedBoolConverter}}"/>
+        <Image Source="/Assets/Device/Cuts/Device Knob B.png"
+               IsVisible="{ReflectionBinding $parent[UserControl].IsPressed}"/>
+        <Image Source="/Assets/Device/Cuts/Device Knob Dot.png"
+               Width="13"
+               Margin="{ReflectionBinding $parent[UserControl].RotationAmount,
+               Converter={StaticResource RotationToMargin}}"/>
+    </Panel>
+</UserControl>

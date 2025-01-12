@@ -12,6 +12,8 @@
              
      <Application.Resources>
          <converters:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+         <converters:FadeAmountToMargin x:Key="FadeToMargin" />
+         <converters:RotationToMargin x:Key="RotationToMargin" />
          <converters:ButtonPositionToAssetPathA x:Key="ButtonAConverter" />
          <converters:ButtonPositionToAssetPathB x:Key="ButtonBConverter" />
      </Application.Resources>

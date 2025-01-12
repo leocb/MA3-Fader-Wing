@@ -1,0 +1,25 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="165" d:DesignHeight="388"
+             x:Class="FW.Bridge.Views.UserControls.DeviceFaderView"
+             Width="165"
+             Height="388"
+             FontWeight="Black"
+             FontSize="18"
+             Background="Transparent"
+             >
+    <Panel ClipToBounds="True" VerticalAlignment="Bottom">
+        <Image Source="/Assets/Device/Cuts/Device Fader Shadow.png"
+               Margin="{ReflectionBinding $parent[UserControl].FadeCurrent,
+               Converter={StaticResource FadeToMargin}}"/>
+        <Image Source="/Assets/Device/Cuts/Device Fader.png"
+               Margin="{ReflectionBinding $parent[UserControl].FadeCurrent,
+               Converter={StaticResource FadeToMargin}}"/>
+        <Image Source="/Assets/Device/Cuts/Device Fader.png"
+               Opacity="0.3"
+               Margin="{ReflectionBinding $parent[UserControl].FadeTarget,
+               Converter={StaticResource FadeToMargin}}"/>
+    </Panel>
+</UserControl>

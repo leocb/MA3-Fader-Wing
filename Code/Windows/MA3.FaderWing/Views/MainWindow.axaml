@@ -35,8 +35,7 @@
             </ExperimentalAcrylicBorder.Material>
         </ExperimentalAcrylicBorder>
         <Panel Margin="40">
-        
-        <uc:DeviceView/>
+            <uc:DeviceView/>
         </Panel>
     </Panel>
 
