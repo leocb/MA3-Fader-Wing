@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using Avalonia;
-using Avalonia.Controls.Converters;
 using Avalonia.Data.Converters;
-using Avalonia.Media.Imaging;
-using Avalonia.Platform;
-using FW.Bridge.Data;
 
 namespace FW.Bridge.Views.Converters;
 
