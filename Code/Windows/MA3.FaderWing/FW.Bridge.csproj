@@ -9,7 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Models\"/>
         <AvaloniaResource Include="Assets\**"/>
     </ItemGroup>
 
@@ -21,5 +20,7 @@
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.2.3"/>
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.2.3"/>
+        <PackageReference Include="HidSharp" Version="2.1.0" />
+        <PackageReference Include="ObjectDumper.NET" Version="4.3.4-pre" />
     </ItemGroup>
 </Project>
