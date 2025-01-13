@@ -8,16 +8,16 @@ public partial class DeviceFaderView : UserControl
     public DeviceFaderView()
     {
         InitializeComponent();
-        AffectsRender<DeviceButtonView>(FadeAmountProperty);
+        AffectsRender<DeviceButtonView>(FadeCurrentProperty);
     }
     
-    public static readonly StyledProperty<double> FadeAmountProperty =
+    public static readonly StyledProperty<double> FadeCurrentProperty =
         AvaloniaProperty.Register<DeviceButtonView,double>(nameof(FadeCurrent));
     
     public double FadeCurrent
     {
-        get => GetValue(FadeAmountProperty);
-        set => SetValue(FadeAmountProperty, value);
+        get => GetValue(FadeCurrentProperty);
+        set => SetValue(FadeCurrentProperty, value);
     }
     
     public static readonly StyledProperty<double> FadeTargetProperty =

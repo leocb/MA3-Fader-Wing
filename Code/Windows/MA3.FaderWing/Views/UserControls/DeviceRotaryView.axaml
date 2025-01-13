@@ -8,17 +8,18 @@
              Height="57"
              FontWeight="Black"
              FontSize="18"
+             x:Name="UC"
              Background="Transparent"
              >
     <Panel ClipToBounds="True">
         <Image Source="/Assets/Device/Cuts/Device Knob A.png"
-               IsVisible="{ReflectionBinding $parent[UserControl].IsPressed,
+               IsVisible="{Binding  #UC.IsPressed,
                Converter={StaticResource InvertedBoolConverter}}"/>
         <Image Source="/Assets/Device/Cuts/Device Knob B.png"
-               IsVisible="{ReflectionBinding $parent[UserControl].IsPressed}"/>
+               IsVisible="{Binding  #UC.IsPressed}"/>
         <Image Source="/Assets/Device/Cuts/Device Knob Dot.png"
                Width="13"
-               Margin="{ReflectionBinding $parent[UserControl].RotationAmount,
+               Margin="{Binding  #UC.RotationAmount,
                Converter={StaticResource RotationToMargin}}"/>
     </Panel>
 </UserControl>

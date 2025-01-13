@@ -23,21 +23,21 @@ public partial class DeviceButtonView : UserControl
     
     
     public static readonly StyledProperty<bool> IsPressedProperty =
-        AvaloniaProperty.Register<DeviceButtonView,bool>(nameof(IsPresed));
+        AvaloniaProperty.Register<DeviceButtonView,bool>(nameof(IsPressed));
     
-    public bool IsPresed
+    public bool IsPressed
     {
         get => GetValue(IsPressedProperty);
         set => SetValue(IsPressedProperty, value);
     }
     
     
-    public static readonly StyledProperty<ButtonPosition> ButtonPositionProperty =
+    public static readonly StyledProperty<ButtonPosition> AssetProperty =
         AvaloniaProperty.Register<DeviceButtonView,ButtonPosition>(nameof(Asset));
     
     public ButtonPosition Asset
     {
-        get => GetValue(ButtonPositionProperty);
-        set => SetValue(ButtonPositionProperty, value);
+        get => GetValue(AssetProperty);
+        set => SetValue(AssetProperty, value);
     }
 }

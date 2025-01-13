@@ -8,18 +8,19 @@
              Height="388"
              FontWeight="Black"
              FontSize="18"
+             x:Name="UC"
              Background="Transparent"
              >
     <Panel ClipToBounds="True" VerticalAlignment="Bottom">
         <Image Source="/Assets/Device/Cuts/Device Fader Shadow.png"
-               Margin="{ReflectionBinding $parent[UserControl].FadeCurrent,
+               Margin="{Binding #UC.FadeCurrent,
                Converter={StaticResource FadeToMargin}}"/>
         <Image Source="/Assets/Device/Cuts/Device Fader.png"
-               Margin="{ReflectionBinding $parent[UserControl].FadeCurrent,
+               Margin="{Binding #UC.FadeCurrent,
                Converter={StaticResource FadeToMargin}}"/>
         <Image Source="/Assets/Device/Cuts/Device Fader.png"
                Opacity="0.3"
-               Margin="{ReflectionBinding $parent[UserControl].FadeTarget,
+               Margin="{Binding #UC.FadeTarget,
                Converter={StaticResource FadeToMargin}}"/>
     </Panel>
 </UserControl>

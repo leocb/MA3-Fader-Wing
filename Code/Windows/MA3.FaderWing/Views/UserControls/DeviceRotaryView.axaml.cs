@@ -8,7 +8,7 @@ public partial class DeviceRotaryView : UserControl
     public DeviceRotaryView()
     {
         InitializeComponent();
-        AffectsRender<DeviceButtonView>(IsPressedProperty, RotationProperty);
+        AffectsRender<DeviceButtonView>(IsPressedProperty, RotationAmountProperty);
     }
     
     public static readonly StyledProperty<bool> IsPressedProperty =
@@ -20,12 +20,12 @@ public partial class DeviceRotaryView : UserControl
         set => SetValue(IsPressedProperty, value);
     }
     
-    public static readonly StyledProperty<double> RotationProperty =
+    public static readonly StyledProperty<double> RotationAmountProperty =
         AvaloniaProperty.Register<DeviceButtonView,double>(nameof(RotationAmount));
     
     public double RotationAmount
     {
-        get => GetValue(RotationProperty);
-        set => SetValue(RotationProperty, value);
+        get => GetValue(RotationAmountProperty);
+        set => SetValue(RotationAmountProperty, value);
     }
 }
