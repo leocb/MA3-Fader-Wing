@@ -3,8 +3,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:uc="clr-namespace:FW.Bridge.Views.UserControls"
+             xmlns:vm="using:FW.Bridge.ViewModels"
              mc:Ignorable="d" d:DesignWidth="467" d:DesignHeight="721"
              x:Class="FW.Bridge.Views.UserControls.DeviceView"
+             x:DataType="vm:DeviceViewModel"
              Width="467"
              Height="721"
              Background="Transparent"
@@ -36,35 +38,35 @@
             Source="/Assets/Device/Device BG2 with Ticks.png"/>
             <!--Source="/Assets/Device/Device BG2 with Ticks.png"/>-->
         <!-- Rotary -->
-        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="1" Grid.Row="0"/>
-        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="2" Grid.Row="0"/>
-        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="3" Grid.Row="0"/>
-        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="4" Grid.Row="0"/>
-        <uc:DeviceRotaryView IsPressed="False" RotationAmount="0" Grid.Column="5" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="{Binding Rotary1Push}" RotationAmount="{Binding Rotary1Rot}" Grid.Column="1" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="{Binding Rotary2Push}" RotationAmount="{Binding Rotary2Rot}" Grid.Column="2" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="{Binding Rotary3Push}" RotationAmount="{Binding Rotary3Rot}" Grid.Column="3" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="{Binding Rotary4Push}" RotationAmount="{Binding Rotary4Rot}" Grid.Column="4" Grid.Row="0"/>
+        <uc:DeviceRotaryView IsPressed="{Binding Rotary5Push}" RotationAmount="{Binding Rotary5Rot}" Grid.Column="5" Grid.Row="0"/>
         <!-- Top row Buttons -->
-        <uc:DeviceButtonView ButtonId="301" IsPresed="False" Asset="TL" Grid.Column="1" Grid.Row="1"/>
-        <uc:DeviceButtonView ButtonId="302" IsPresed="False" Asset="TC" Grid.Column="2" Grid.Row="1"/>
-        <uc:DeviceButtonView ButtonId="303" IsPresed="False" Asset="TC" Grid.Column="3" Grid.Row="1"/>
-        <uc:DeviceButtonView ButtonId="304" IsPresed="False" Asset="TC" Grid.Column="4" Grid.Row="1"/>
-        <uc:DeviceButtonView ButtonId="305" IsPresed="False" Asset="TR" Grid.Column="5" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="301" IsPressed="{Binding Button301Push}" Asset="TL" Grid.Column="1" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="302" IsPressed="{Binding Button302Push}" Asset="TC" Grid.Column="2" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="303" IsPressed="{Binding Button303Push}" Asset="TC" Grid.Column="3" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="304" IsPressed="{Binding Button304Push}" Asset="TC" Grid.Column="4" Grid.Row="1"/>
+        <uc:DeviceButtonView ButtonId="305" IsPressed="{Binding Button305Push}" Asset="TR" Grid.Column="5" Grid.Row="1"/>
         <!-- Faders -->
-        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="1" Grid.Row="2"/>
-        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="2" Grid.Row="2"/>
-        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="3" Grid.Row="2"/>
-        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="4" Grid.Row="2"/>
-        <uc:DeviceFaderView FadeCurrent="0" FadeTarget="0" Padding="8,0,0,5" Grid.Column="5" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="{Binding Fader1Cur}" FadeTarget="{Binding Fader1Cur}" Padding="8,0,0,5" Grid.Column="1" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="{Binding Fader2Cur}" FadeTarget="{Binding Fader2Cur}" Padding="8,0,0,5" Grid.Column="2" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="{Binding Fader3Cur}" FadeTarget="{Binding Fader3Cur}" Padding="8,0,0,5" Grid.Column="3" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="{Binding Fader4Cur}" FadeTarget="{Binding Fader4Cur}" Padding="8,0,0,5" Grid.Column="4" Grid.Row="2"/>
+        <uc:DeviceFaderView FadeCurrent="{Binding Fader5Cur}" FadeTarget="{Binding Fader5Cur}" Padding="8,0,0,5" Grid.Column="5" Grid.Row="2"/>
         <!-- Middle row Buttons -->
-        <uc:DeviceButtonView ButtonId="201" IsPresed="False" Asset="ML" Grid.Column="1" Grid.Row="3"/>
-        <uc:DeviceButtonView ButtonId="202" IsPresed="False" Asset="MC" Grid.Column="2" Grid.Row="3"/>
-        <uc:DeviceButtonView ButtonId="203" IsPresed="False" Asset="MC" Grid.Column="3" Grid.Row="3"/>
-        <uc:DeviceButtonView ButtonId="204" IsPresed="False" Asset="MC" Grid.Column="4" Grid.Row="3"/>
-        <uc:DeviceButtonView ButtonId="205" IsPresed="False" Asset="MR" Grid.Column="5" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="201" IsPressed="{Binding Button201Push}" Asset="ML" Grid.Column="1" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="202" IsPressed="{Binding Button202Push}" Asset="MC" Grid.Column="2" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="203" IsPressed="{Binding Button203Push}" Asset="MC" Grid.Column="3" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="204" IsPressed="{Binding Button204Push}" Asset="MC" Grid.Column="4" Grid.Row="3"/>
+        <uc:DeviceButtonView ButtonId="205" IsPressed="{Binding Button205Push}" Asset="MR" Grid.Column="5" Grid.Row="3"/>
         <!-- Bottom row Buttons -->
-        <uc:DeviceButtonView ButtonId="101" IsPresed="False" Asset="BL" Margin="0,5,0,0" Grid.Column="1" Grid.Row="4"/>
-        <uc:DeviceButtonView ButtonId="102" IsPresed="False" Asset="BC" Margin="0,5,0,0" Grid.Column="2" Grid.Row="4"/>
-        <uc:DeviceButtonView ButtonId="103" IsPresed="False" Asset="BC" Margin="0,5,0,0" Grid.Column="3" Grid.Row="4"/>
-        <uc:DeviceButtonView ButtonId="104" IsPresed="False" Asset="BC" Margin="0,5,0,0" Grid.Column="4" Grid.Row="4"/>
-        <uc:DeviceButtonView ButtonId="105" IsPresed="False" Asset="BR" Margin="0,5,0,0" Grid.Column="5" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="101" IsPressed="{Binding Button101Push}" Asset="BL" Margin="0,5,0,0" Grid.Column="1" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="102" IsPressed="{Binding Button102Push}" Asset="BC" Margin="0,5,0,0" Grid.Column="2" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="103" IsPressed="{Binding Button103Push}" Asset="BC" Margin="0,5,0,0" Grid.Column="3" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="104" IsPressed="{Binding Button104Push}" Asset="BC" Margin="0,5,0,0" Grid.Column="4" Grid.Row="4"/>
+        <uc:DeviceButtonView ButtonId="105" IsPressed="{Binding Button105Push}" Asset="BR" Margin="0,5,0,0" Grid.Column="5" Grid.Row="4"/>
         
     </Grid>
 </UserControl>
