@@ -2,7 +2,7 @@
 
 public struct DeviceData
 {
-    public string Id;
+    public string Serial;
     public int ColumnOffset;
     
     public bool Rotary1Push;

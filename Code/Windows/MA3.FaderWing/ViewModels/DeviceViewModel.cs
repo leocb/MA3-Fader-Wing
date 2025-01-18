@@ -6,19 +6,23 @@ namespace FW.Bridge.ViewModels;
 
 public class DeviceViewModel : ViewModelBase
 {
+    private bool _isConnected;
     private DeviceData _data;
-    private DeviceControl _control;
+    private DeviceController _controller;
 
-    public DeviceViewModel(int columnOffset, string id = "")
+    public DeviceViewModel(int columnOffset, string serial = "")
     {
-        _data.Id = id;
+        _data.Serial = serial;
         _data.ColumnOffset = columnOffset;
-        _control = new (this);
+        _controller = new(this);
     }
-
-    public string Id {get => _data.Id; set => this.RaiseAndSetIfChanged(ref _data.Id, value); }
+    
+    
+    
+    public string Serial {get => _data.Serial; set => this.RaiseAndSetIfChanged(ref _data.Serial, value); }
     public int ColumnOffset {get => _data.ColumnOffset; set => this.RaiseAndSetIfChanged(ref _data.ColumnOffset, value); }
-
+    public bool IsConnected {get => _isConnected; set => this.RaiseAndSetIfChanged(ref _isConnected, value); }
+    
     #region Device state public properties
     
     public bool Button101Push {get => _data.Button101Push; set => this.RaiseAndSetIfChanged(ref _data.Button101Push, value); }

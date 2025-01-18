@@ -8,6 +8,6 @@ public partial class DeviceView : UserControl
     public DeviceView()
     {
         InitializeComponent();
-        DataContext = new DeviceViewModel(0, "");
+        DataContext = new DeviceViewModel(0, "54317092");
     }
 }
