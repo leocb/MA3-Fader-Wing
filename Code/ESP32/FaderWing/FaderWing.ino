@@ -1,17 +1,8 @@
-#ifndef ARDUINO_USB_MODE
-#error This ESP32 SoC has no Native USB interface
 
-#elif ARDUINO_USB_MODE == 1
-#warning This sketch should be used when USB is in OTG mode
-void setup() {}
-void loop() {}
-
-#else
-#include "USB.h"
-#include "USBHID.h"
+#include <Adafruit_TinyUSB.h>
+#include "esp_mac.h"
 
 // Global Variables
-USBHID HID;
 
 // MA3 Fader wing what:
 
@@ -34,6 +25,11 @@ USBHID HID;
 
 
 // DEFINES
+#define USB_SERIAL_NUMBER "54317092"
+// 93008922
+// 41851570
+// 31921269
+
 #define BTNS_CNT 20 // 1 bit for each button = 3 Bytes minimum
 #define FADR_CNT 5  // 1 byte for each = 5 Bytes
 #define ENCO_CNT 5  // 1 byte for each = 5 Bytes
@@ -51,8 +47,75 @@ static const uint8_t rows_pins[] = {
   
 };
 
+// Custom HID device class// HID device
+Adafruit_USBD_HID usb_hid;
+
+uint8_t data[HID_DATA_SIZE];
+
+const int buttonPin = 0;
+int previousButtonState = HIGH;
+
+void setup() {
+  setupUsb();
+  pinMode(buttonPin, INPUT_PULLUP);
+}
+
+void loop() {
+  // Manual call tud_task since it isn't called by Core's background
+  #ifdef TINYUSB_NEED_POLLING_TASK
+  TinyUSBDevice.task();
+  #endif
+
+  // Step 1: Read Button matrix state
+
+  int buttonState = digitalRead(buttonPin);
+  if (buttonState != previousButtonState) {
+    previousButtonState = buttonState;
+    if (buttonState == LOW) {
+      SendRandomData();
+    } else {
+      //Serial.println("Button Released");
+    }
+    delay(100);
+  }
+}
+
+
+
+void SendRandomData(){
+  Serial.println("Button Pressed");
+  // Buttons (first 20 bits)
+  data[0] = random(256);
+  data[1] = random(256);
+  data[2] = random(256);
+  // faders
+  data[3] = random(256);
+  data[4] = random(256);
+  data[5] = random(256);
+  data[6] = random(256);
+  data[7] = random(256);
+  // rotary
+  data[8] = random(3);
+  data[9] = random(3);
+  data[10] = random(3);
+  data[11] = random(3);
+  data[12] = random(3);
+  // Send report
+  usb_hid.sendReport(0, data, sizeof(data));
+}
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+/// ------------------ USB HID ------------------- ///
+//////////////////////////////////////////////////////
+
+
 // HID report descriptor, change marked lines if you change any of the define above
-static const uint8_t report_descriptor[] = {
+uint8_t const desc_hid_report[] = {
   // Ident as a joystick
   0x05, 0x01,  // Usage Page (Generic Desktop Ctrls)
   0x09, 0x04,  // Usage (Joystick)
@@ -100,91 +163,25 @@ static const uint8_t report_descriptor[] = {
   0xC0,        // End Collection
 };
 
-// Custom HID device class
-class CustomHIDDevice : public USBHIDDevice {
-public:
-  CustomHIDDevice(void) {
-    static bool initialized = false;
-    if (!initialized) {
-      initialized = true;
-      HID.addDevice(this, sizeof(report_descriptor));
-    }
+void setupUsb(){
+  // Manual begin() is required on core without built-in support e.g. mbed rp2040
+  if (!TinyUSBDevice.isInitialized()) {
+    TinyUSBDevice.begin(0);
   }
 
-  void begin(void) {
-    HID.begin();
-  }
-
-  uint16_t _onGetDescriptor(uint8_t *buffer) {
-    memcpy(buffer, report_descriptor, sizeof(report_descriptor));
-    return sizeof(report_descriptor);
-  }
+  // Initialize HID
+  usb_hid.enableOutEndpoint(true);
+  usb_hid.setPollInterval(2); // 2ms polling interval
+  usb_hid.setReportDescriptor(desc_hid_report, sizeof(desc_hid_report));
+  TinyUSBDevice.setManufacturerDescriptor("github.com/leocb");
+  TinyUSBDevice.setProductDescriptor("DIY MA3 FaderWing");
+  TinyUSBDevice.setSerialDescriptor(USB_SERIAL_NUMBER);
+  usb_hid.begin();
   
-  bool send(uint8_t *value) {
-    return HID.SendReport(0, value, HID_DATA_SIZE);
-  }
-};
-
-
-CustomHIDDevice Device;
-
-uint8_t data[HID_DATA_SIZE];
-
-const int buttonPin = 0;
-int previousButtonState = HIGH;
-
-void setup() {
-  Serial.begin(115200);
-  Serial.setDebugOutput(true);
-  pinMode(buttonPin, INPUT_PULLUP);
-  Device.begin();
-  USB.begin();
-}
-
-void loop() {
-  // Step 0: Wait for HID to be ready
-  while (!HID.ready()) {
-    continue;
-  }
-
-  // Step 1: Read Button matrix state
-
-  int buttonState = digitalRead(buttonPin);
-  if (buttonState != previousButtonState) {
-    previousButtonState = buttonState;
-    if (buttonState == LOW) {
-      SendRandomData();
-    } else {
-      //Serial.println("Button Released");
-    }
-    delay(100);
+  // If already enumerated, additional class driverr begin() e.g msc, hid, midi won't take effect until re-enumeration
+  if (TinyUSBDevice.mounted()) {
+    TinyUSBDevice.detach();
+    delay(10);
+    TinyUSBDevice.attach();
   }
 }
-
-
-
-void SendRandomData(){
-  Serial.println("Button Pressed");
-  // Buttons (first 20 bits)
-  data[0] = random(256);
-  data[1] = random(256);
-  data[2] = random(256);
-  // faders
-  data[3] = random(256);
-  data[4] = random(256);
-  data[5] = random(256);
-  data[6] = random(256);
-  data[7] = random(256);
-  // rotary
-  data[8] = random(3);
-  data[9] = random(3);
-  data[10] = random(3);
-  data[11] = random(3);
-  data[12] = random(3);
-  Device.send(data);  
-}
-
-
-
-
-#endif /* ARDUINO_USB_MODE */
