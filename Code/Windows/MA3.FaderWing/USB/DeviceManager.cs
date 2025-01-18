@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Linq;
-using Avalonia.Controls;
 using HidSharp;
 
 namespace FW.Bridge.USB;
@@ -35,8 +34,19 @@ public static class DeviceManager
     // Find HID devices.
     public static Dictionary<string, HidDevice> GetHidDevicesSerial()
     {
-        return DeviceList.Local.GetHidDevices()
-            .Where(d => d.GetManufacturer() == "github.com/leocb")
-            .ToDictionary(d => d.GetSerialNumber(), d => d);
+        var devices = DeviceList.Local.GetHidDevices();
+        var filteredDevices = devices.Where(d =>
+        {
+            try
+            {
+                return d.GetManufacturer() == "github.com/leocb";
+            }
+            catch
+            {
+                return false;
+            }
+        });
+        var outputDict = filteredDevices.ToDictionary(d => d.GetSerialNumber(), d => d);
+        return outputDict;
     }
 }
